@@ -1,0 +1,130 @@
+print_every_second
+- buffer read underflow stack
+- buffer read overflow stack
+- type overflow
+
+print_array_hex
+- buffer read underflow heap
+- buffer read overflow heap
+
+main 
+- buffer write overflow heap
+- using freed variable
+- free freed variable
+- changing type float -> int
+- bad computation of size
+- copying 
+
+pouzito:
+- null pointer dereference
+- buffer read overflow
+- buffer read underflow
+- neinicializovana promenna
+- type donversion float -> int
+- unsigned int porovnavani
+- type overflow
+- copy without non termination
+
+
+- neinicializovana promenna;
+- null pointer exception
+- buffer overflow
+- buffer underflor - podtece - for cyklus pozpatku
+- porovnani signed and unsigned
+- printf - spatne formatove - dat int do stringu
+- poplest pointer a int
+- float -> short
+- 
+
+
+USED:
+HasMember	Variant	415	Double Free
+HasMember	Variant	416	Use After Free
+HasMember	Base	120	Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')
+HasMember	Base	480	Use of Incorrect Operator
+HasMember	Variant	481	Assigning instead of Comparing
+HasMember	Base	805	Buffer Access with Incorrect Length Value
+HasMember	Base	787	Out-of-bounds Write
+HasMember	Variant	121	Stack-based Buffer Overflow
+HasMember	Variant	122	Heap-based Buffer Overflow
+HasMember	Base	125	Out-of-bounds Read
+HasMember	Variant	126	Buffer Over-read
+HasMember	Variant	127	Buffer Under-read
+HasMember	Base	170	Improper Null Termination
+HasMember	Base	476	NULL Pointer Dereference
+HasMember	Variant	457	Use of Uninitialized Variable
+HasMember	Variant	482	Comparing instead of Assigning
+HasMember	Base	478	Missing Default Case in Switch Statement
+HasMember	Base	484	Omitted Break Statement in Switch
+HasMember	Base	562	Return of Stack Variable Address
+
+
+
+Nature	Type	ID	Name
+HasMember	Variant	14	Compiler Removal of Code to Clear Buffers
+HasMember	Class	119	Improper Restriction of Operations within the Bounds of a Memory Buffer
+HasMember	Base	123	Write-what-where Condition
+HasMember	Base	124	Buffer Underwrite ('Buffer Underflow')
+HasMember	Base	128	Wrap-around Error
+HasMember	Variant	129	Improper Validation of Array Index
+HasMember	Base	130	Improper Handling of Length Parameter Inconsistency
+HasMember	Base	131	Incorrect Calculation of Buffer Size
+HasMember	Base	134	Use of Externally-Controlled Format String
+HasMember	Base	135	Incorrect Calculation of Multi-Byte String Length
+HasMember	Base	188	Reliance on Data/Memory Layout
+HasMember	Base	191	Integer Underflow (Wrap or Wraparound)
+HasMember	Variant	192	Integer Coercion Error
+HasMember	Variant	194	Unexpected Sign Extension
+HasMember	Variant	195	Signed to Unsigned Conversion Error
+HasMember	Variant	196	Unsigned to Signed Conversion Error
+HasMember	Base	197	Numeric Truncation Error
+HasMember	Base	242	Use of Inherently Dangerous Function
+HasMember	Variant	243	Creation of chroot Jail Without Changing Working Directory
+HasMember	Variant	244	Improper Clearing of Heap Memory Before Release ('Heap Inspection')
+HasMember	Class	362	Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')
+HasMember	Base	364	Signal Handler Race Condition
+HasMember	Base	365	Race Condition in Switch
+HasMember	Base	366	Race Condition within a Thread
+HasMember	Base	374	Passing Mutable Objects to an Untrusted Method
+HasMember	Base	375	Returning a Mutable Object to an Untrusted Caller
+HasMember	Variant	401	Missing Release of Memory after Effective Lifetime
+
+HasMember	Base	460	Improper Cleanup on Thrown Exception
+HasMember	Base	462	Duplicate Key in Associative List (Alist)
+HasMember	Base	463	Deletion of Data Structure Sentinel
+HasMember	Base	464	Addition of Data Structure Sentinel
+HasMember	Base	466	Return of Pointer Value Outside of Expected Range
+HasMember	Variant	467	Use of sizeof() on a Pointer Type
+HasMember	Base	468	Incorrect Pointer Scaling
+HasMember	Base	469	Use of Pointer Subtraction to Determine Size
+HasMember	Base	474	Use of Function with Inconsistent Implementations
+
+HasMember	Variant	479	Signal Handler Use of a Non-reentrant Function
+
+HasMember	Base	483	Incorrect Block Delimitation
+HasMember	Variant	495	Private Data Structure Returned From A Public Method
+HasMember	Variant	496	Public Data Assigned to Private Array-Typed Field
+HasMember	Variant	558	Use of getlogin() in Multithreaded Application
+HasMember	Variant	560	Use of umask() with chmod-style Argument
+
+HasMember	Base	587	Assignment of a Fixed Address to a Pointer
+HasMember	Base	676	Use of Potentially Dangerous Function
+HasMember	Variant	685	Function Call With Incorrect Number of Arguments
+HasMember	Variant	688	Function Call With Incorrect Variable or Reference as Argument
+HasMember	Composite	689	Permission Race Condition During Resource Copy
+HasMember	Chain	690	Unchecked Return Value to NULL Pointer Dereference
+HasMember	Class	704	Incorrect Type Conversion or Cast
+HasMember	Base	733	Compiler Optimization Removal or Modification of Security-critical Code
+HasMember	Variant	762	Mismatched Memory Management Routines
+HasMember	Variant	781	Improper Address Validation in IOCTL with METHOD_NEITHER I/O Control Code
+HasMember	Variant	782	Exposed IOCTL with Insufficient Access Control
+HasMember	Base	783	Operator Precedence Logic Error
+HasMember	Variant	785	Use of Path Manipulation Function without Maximum-sized Buffer
+
+HasMember	Variant	789	Memory Allocation with Excessive Size Value
+HasMember	Variant	806	Buffer Access Using Size of Source Buffer
+HasMember	Base	839	Numeric Range Comparison Without Minimum Check
+HasMember	Base	843	Access of Resource Using Incompatible Type ('Type Confusion')
+HasMember	Base	910	Use of Expired File Descriptor
+HasMember	Base	911	Improper Update of Reference Count
+HasMember	Base	1325	Improperly Controlled Sequential Memory Allocation
